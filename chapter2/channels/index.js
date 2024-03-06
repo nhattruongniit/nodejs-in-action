@@ -6,7 +6,9 @@ const PORT = 8888;
 channel.clients = {};
 channel.subscriptions = {};
 channel.on("join", function(id, client) {
-  console.log("===============", id, client);
+  console.log("===============", {
+    client
+  });
   this.client[id] = client;
   this.subscriptions[id] = (senderId, message) => {
     if (id !== senderId) {

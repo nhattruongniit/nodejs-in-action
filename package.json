@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "chapter2": "node chapter2/channels/index.js",
+    "chapter3": "node chapter3/index.js"
   },
   "keywords": [],
   "author": "",
